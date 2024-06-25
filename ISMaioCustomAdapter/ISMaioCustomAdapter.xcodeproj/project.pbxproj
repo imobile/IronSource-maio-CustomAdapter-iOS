@@ -15,6 +15,8 @@
 		C292C4222C2B0D1D00B84092 /* Maio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C4202C2B0D1D00B84092 /* Maio.xcframework */; };
 		C292C4242C2B0F6A00B84092 /* ISMaioCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */; };
 		C292C4282C2B135400B84092 /* ISMaioCustomAdapterConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */; };
+		C292C42B2C2B3B8400B84092 /* ISMaioCustomInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = C292C4292C2B3B8400B84092 /* ISMaioCustomInterstitial.h */; };
+		C292C42C2C2B3B8400B84092 /* ISMaioCustomInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = C292C42A2C2B3B8400B84092 /* ISMaioCustomInterstitial.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		C292C4202C2B0D1D00B84092 /* Maio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Maio.xcframework; sourceTree = "<group>"; };
 		C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISMaioCustomAdapter.m; sourceTree = "<group>"; };
 		C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMaioCustomAdapterConstants.h; sourceTree = "<group>"; };
+		C292C4292C2B3B8400B84092 /* ISMaioCustomInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMaioCustomInterstitial.h; sourceTree = "<group>"; };
+		C292C42A2C2B3B8400B84092 /* ISMaioCustomInterstitial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISMaioCustomInterstitial.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				C292C4082C2B0BAD00B84092 /* ISMaioCustomAdapter.docc */,
 				C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */,
 				C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */,
+				C292C4292C2B3B8400B84092 /* ISMaioCustomInterstitial.h */,
+				C292C42A2C2B3B8400B84092 /* ISMaioCustomInterstitial.m */,
 			);
 			path = ISMaioCustomAdapter;
 			sourceTree = "<group>";
@@ -116,6 +122,7 @@
 			files = (
 				C292C4282C2B135400B84092 /* ISMaioCustomAdapterConstants.h in Headers */,
 				C292C4152C2B0BAD00B84092 /* ISMaioCustomAdapter.h in Headers */,
+				C292C42B2C2B3B8400B84092 /* ISMaioCustomInterstitial.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C292C42C2C2B3B8400B84092 /* ISMaioCustomInterstitial.m in Sources */,
 				C292C4242C2B0F6A00B84092 /* ISMaioCustomAdapter.m in Sources */,
 				C292C4092C2B0BAD00B84092 /* ISMaioCustomAdapter.docc in Sources */,
 			);
