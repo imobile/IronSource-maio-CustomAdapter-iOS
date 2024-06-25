@@ -3,14 +3,11 @@
 //  ISMaioCustomAdapter
 //
 
-#import <Foundation/Foundation.h>
+#import <IronSource/IronSource.h>
 
-//! Project version number for ISMaioCustomAdapter.
-FOUNDATION_EXPORT double ISMaioCustomAdapterVersionNumber;
+NS_ASSUME_NONNULL_BEGIN
 
-//! Project version string for ISMaioCustomAdapter.
-FOUNDATION_EXPORT const unsigned char ISMaioCustomAdapterVersionString[];
+@interface ISMaioCustomAdapter : ISBaseNetworkAdapter
+@end
 
-// In this header, you should import all the public headers of your framework using statements like #import <ISMaioCustomAdapter/PublicHeader.h>
-
-
+NS_ASSUME_NONNULL_END
