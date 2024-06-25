@@ -4,6 +4,9 @@
 //
 
 #import "ISMaioCustomAdapter.h"
+#import "ISMaioCustomAdapterConstants.h"
+
+#import <Maio/Maio-Swift.h>
 
 @implementation ISMaioCustomAdapter
 
@@ -12,5 +15,12 @@
     [delegate onInitDidSucceed];
 }
 
+- (NSString *)networkSDKVersion {
+    return MaioVersion.shared.toString;
+}
+
+-(NSString *)adapterVersion {
+    return ISMaioCustomAdapterversion;
+}
 
 @end

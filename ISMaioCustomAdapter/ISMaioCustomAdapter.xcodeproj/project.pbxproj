@@ -14,6 +14,7 @@
 		C292C4212C2B0D1D00B84092 /* IronSource.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C41F2C2B0D1D00B84092 /* IronSource.xcframework */; };
 		C292C4222C2B0D1D00B84092 /* Maio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C4202C2B0D1D00B84092 /* Maio.xcframework */; };
 		C292C4242C2B0F6A00B84092 /* ISMaioCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */; };
+		C292C4282C2B135400B84092 /* ISMaioCustomAdapterConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		C292C41F2C2B0D1D00B84092 /* IronSource.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IronSource.xcframework; sourceTree = "<group>"; };
 		C292C4202C2B0D1D00B84092 /* Maio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Maio.xcframework; sourceTree = "<group>"; };
 		C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISMaioCustomAdapter.m; sourceTree = "<group>"; };
+		C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISMaioCustomAdapterConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				C292C4072C2B0BAD00B84092 /* ISMaioCustomAdapter.h */,
 				C292C4082C2B0BAD00B84092 /* ISMaioCustomAdapter.docc */,
 				C292C4232C2B0F6A00B84092 /* ISMaioCustomAdapter.m */,
+				C292C4272C2B135400B84092 /* ISMaioCustomAdapterConstants.h */,
 			);
 			path = ISMaioCustomAdapter;
 			sourceTree = "<group>";
@@ -111,6 +114,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C292C4282C2B135400B84092 /* ISMaioCustomAdapterConstants.h in Headers */,
 				C292C4152C2B0BAD00B84092 /* ISMaioCustomAdapter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
