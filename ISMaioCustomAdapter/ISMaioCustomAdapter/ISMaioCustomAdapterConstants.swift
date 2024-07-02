@@ -4,3 +4,5 @@
 //
 
 let ISMaioCustomAdapterVersion = "1.0.0"
+
+let paramKeyZoneId: String = "zoneId"
