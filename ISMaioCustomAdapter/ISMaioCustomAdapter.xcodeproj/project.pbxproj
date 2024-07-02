@@ -15,6 +15,7 @@
 		C2B8CAC52C2B89BC002761C7 /* ISMaioCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */; };
 		C2B8CAC72C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */; };
 		C2B8CAC92C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */; };
+		C2B8CACB2C349982002761C7 /* ISMaioCustomRewardedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomAdapter.swift; sourceTree = "<group>"; };
 		C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomAdapterConstants.swift; sourceTree = "<group>"; };
 		C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomInterstitial.swift; sourceTree = "<group>"; };
+		C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomRewardedVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */,
 				C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */,
 				C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */,
+				C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */,
 			);
 			path = ISMaioCustomAdapter;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				C2B8CAC72C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift in Sources */,
 				C2B8CAC52C2B89BC002761C7 /* ISMaioCustomAdapter.swift in Sources */,
 				C292C4092C2B0BAD00B84092 /* ISMaioCustomAdapter.docc in Sources */,
+				C2B8CACB2C349982002761C7 /* ISMaioCustomRewardedVideo.swift in Sources */,
 				C2B8CAC92C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
