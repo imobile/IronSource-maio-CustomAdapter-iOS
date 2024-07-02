@@ -54,6 +54,16 @@ extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstiti
         self.loadDelegate?.adDidLoad()
     }
 
+    func didOpen(_ ad: MaioInterstitial) {
+        self.showDelegate?.adDidOpen()
+    }
+    func didClose(_ ad: MaioInterstitial) {
+        self.showDelegate?.adDidClose()
+    }
+    func didClick(_ ad: MaioInterstitial) {
+        self.showDelegate?.adDidClick()
+    }
+
     func didFail(_ ad: MaioInterstitial, errorCode: Int) {
         if 10000..<20000 ~= errorCode {
 
@@ -64,6 +74,10 @@ extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstiti
             } else {
                 self.loadDelegate?.adDidFailToLoadWith(.internal, errorCode: errorCode, errorMessage: errorMessage)
             }
+        } else if 20000..<30000 ~= errorCode {
+
+            let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
+            self.showDelegate?.adDidFailToShowWithErrorCode(errorCode, errorMessage: errorMessage)
         }
     }
 }
