@@ -65,18 +65,23 @@ extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstiti
     }
 
     func didFail(_ ad: MaioInterstitial, errorCode: Int) {
+        let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
+
         if 10000..<20000 ~= errorCode {
-
-            let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
-
             if 10700..<10800 ~= errorCode {
                 self.loadDelegate?.adDidFailToLoadWith(.noFill, errorCode: errorCode, errorMessage: errorMessage)
             } else {
                 self.loadDelegate?.adDidFailToLoadWith(.internal, errorCode: errorCode, errorMessage: errorMessage)
             }
-        } else if 20000..<30000 ~= errorCode {
 
-            let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
+        } else if 20000..<30000 ~= errorCode {
+            self.showDelegate?.adDidFailToShowWithErrorCode(errorCode, errorMessage: errorMessage)
+        }
+
+        // fallback
+        if !isReady {
+            self.loadDelegate?.adDidFailToLoadWith(.internal, errorCode: errorCode, errorMessage: errorMessage)
+        } else {
             self.showDelegate?.adDidFailToShowWithErrorCode(errorCode, errorMessage: errorMessage)
         }
     }
