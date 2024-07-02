@@ -9,6 +9,8 @@ import Maio
 @objc(ISMaioCustomInterstitial)
 class ISMaioCustomInterstitial: ISBaseInterstitial {
 
+    var isReady = false
+
     var ad: MaioInterstitial?
     var loadDelegate: ISInterstitialAdDelegate?
 
@@ -26,10 +28,15 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
         let ad = MaioInterstitial.loadAd(request: request, callback: self)
         self.ad = ad;
     }
+
+    override func isAdAvailable(with adData: ISAdData!) -> Bool {
+        return isReady
+    }
 }
 
 extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback {
     func didLoad(_ ad: MaioInterstitial) {
+        isReady = true
         self.loadDelegate?.adDidLoad()
     }
 
