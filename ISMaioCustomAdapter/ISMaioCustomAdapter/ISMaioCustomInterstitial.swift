@@ -13,6 +13,7 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
 
     var ad: MaioInterstitial?
     var loadDelegate: ISInterstitialAdDelegate?
+    var showDelegate: ISInterstitialAdDelegate?
 
     override func loadAd(with adData: ISAdData, delegate: ISInterstitialAdDelegate) {
         guard let zoneId = adData.getString(paramKeyZoneId) else {
@@ -32,9 +33,22 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
     override func isAdAvailable(with adData: ISAdData!) -> Bool {
         return isReady
     }
+
+    override func showAd(with viewController: UIViewController, adData: ISAdData, delegate: ISInterstitialAdDelegate) {
+        guard let ad = self.ad else {
+            DispatchQueue.main.async {
+                delegate.adDidFailToShowWithErrorCode(20200, errorMessage: "Invalid show: Not ready")
+            }
+            return
+        }
+
+        self.showDelegate = delegate
+
+        ad.show(viewContext: viewController, callback: self)
+    }
 }
 
-extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback {
+extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstitialShowCallback {
     func didLoad(_ ad: MaioInterstitial) {
         isReady = true
         self.loadDelegate?.adDidLoad()
