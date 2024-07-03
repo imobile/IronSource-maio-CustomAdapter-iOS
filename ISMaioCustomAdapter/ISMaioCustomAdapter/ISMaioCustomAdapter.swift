@@ -34,7 +34,7 @@ public class ISMaioCustomAdapter: ISBaseNetworkAdapter {
         case 10700..<10800: "No fill"
         case 10800..<10900: "Null args: MaioRequest"
         case 10900..<11000: "Disc space not enough"
-        case 11000..<12000: "Unsupported OS version"
+        case 11000..<11100: "Unsupported OS version"
 
         case 20100..<20200: "Ad expired"
         case 20200..<20300: "Not ready yet"
