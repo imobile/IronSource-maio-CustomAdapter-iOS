@@ -7,7 +7,7 @@ import IronSource
 import Maio
 
 @objc(ISMaioCustomRewardedVideo)
-class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
+public class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
 
     var isReady = false
 
@@ -15,7 +15,7 @@ class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
     var loadDelegate: ISRewardedVideoAdDelegate?
     var showDelegate: ISRewardedVideoAdDelegate?
 
-    override func loadAd(with adData: ISAdData, delegate: ISRewardedVideoAdDelegate) {
+    public override func loadAd(with adData: ISAdData, delegate: ISRewardedVideoAdDelegate) {
         guard let zoneId = adData.getString(paramKeyZoneId) else {
             DispatchQueue.main.async {
                 delegate.adDidFailToLoadWith(.internal, errorCode: 10601, errorMessage: "Missing parameter: zoneId")
@@ -30,11 +30,11 @@ class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
         self.ad = ad;
     }
 
-    override func isAdAvailable(with adData: ISAdData!) -> Bool {
+    public override func isAdAvailable(with adData: ISAdData!) -> Bool {
         return isReady
     }
 
-    override func showAd(with viewController: UIViewController, adData: ISAdData, delegate: ISRewardedVideoAdDelegate) {
+    public override func showAd(with viewController: UIViewController, adData: ISAdData, delegate: ISRewardedVideoAdDelegate) {
         guard let ad = self.ad else {
             DispatchQueue.main.async {
                 delegate.adDidFailToShowWithErrorCode(20200, errorMessage: "Invalid show: Not ready")
@@ -49,25 +49,25 @@ class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
 }
 
 extension ISMaioCustomRewardedVideo: MaioRewardedLoadCallback, MaioRewardedShowCallback {
-    func didLoad(_ ad: MaioRewarded) {
+    public func didLoad(_ ad: MaioRewarded) {
         isReady = true
         self.loadDelegate?.adDidLoad()
     }
 
-    func didOpen(_ ad: MaioRewarded) {
+    public func didOpen(_ ad: MaioRewarded) {
         self.showDelegate?.adDidOpen()
     }
-    func didClose(_ ad: MaioRewarded) {
+    public func didClose(_ ad: MaioRewarded) {
         self.showDelegate?.adDidClose()
     }
-    func didClick(_ ad: MaioRewarded) {
+    public func didClick(_ ad: MaioRewarded) {
         self.showDelegate?.adDidClick()
     }
-    func didReward(_ ad: MaioRewarded, reward: RewardData) {
+    public func didReward(_ ad: MaioRewarded, reward: RewardData) {
         self.showDelegate?.adRewarded()
     }
 
-    func didFail(_ ad: MaioRewarded, errorCode: Int) {
+    public func didFail(_ ad: MaioRewarded, errorCode: Int) {
         let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
 
         if 10000..<20000 ~= errorCode {

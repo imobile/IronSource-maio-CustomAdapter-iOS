@@ -7,7 +7,7 @@ import IronSource
 import Maio
 
 @objc(ISMaioCustomInterstitial)
-class ISMaioCustomInterstitial: ISBaseInterstitial {
+public class ISMaioCustomInterstitial: ISBaseInterstitial {
 
     var isReady = false
 
@@ -15,7 +15,7 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
     var loadDelegate: ISInterstitialAdDelegate?
     var showDelegate: ISInterstitialAdDelegate?
 
-    override func loadAd(with adData: ISAdData, delegate: ISInterstitialAdDelegate) {
+    public override func loadAd(with adData: ISAdData, delegate: ISInterstitialAdDelegate) {
         guard let zoneId = adData.getString(paramKeyZoneId) else {
             DispatchQueue.main.async {
                 delegate.adDidFailToLoadWith(.internal, errorCode: 10601, errorMessage: "Missing parameter: zoneId")
@@ -30,11 +30,11 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
         self.ad = ad;
     }
 
-    override func isAdAvailable(with adData: ISAdData!) -> Bool {
+    public override func isAdAvailable(with adData: ISAdData!) -> Bool {
         return isReady
     }
 
-    override func showAd(with viewController: UIViewController, adData: ISAdData, delegate: ISInterstitialAdDelegate) {
+    public override func showAd(with viewController: UIViewController, adData: ISAdData, delegate: ISInterstitialAdDelegate) {
         guard let ad = self.ad else {
             DispatchQueue.main.async {
                 delegate.adDidFailToShowWithErrorCode(20200, errorMessage: "Invalid show: Not ready")
@@ -49,22 +49,22 @@ class ISMaioCustomInterstitial: ISBaseInterstitial {
 }
 
 extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstitialShowCallback {
-    func didLoad(_ ad: MaioInterstitial) {
+    public func didLoad(_ ad: MaioInterstitial) {
         isReady = true
         self.loadDelegate?.adDidLoad()
     }
 
-    func didOpen(_ ad: MaioInterstitial) {
+    public func didOpen(_ ad: MaioInterstitial) {
         self.showDelegate?.adDidOpen()
     }
-    func didClose(_ ad: MaioInterstitial) {
+    public func didClose(_ ad: MaioInterstitial) {
         self.showDelegate?.adDidClose()
     }
-    func didClick(_ ad: MaioInterstitial) {
+    public func didClick(_ ad: MaioInterstitial) {
         self.showDelegate?.adDidClick()
     }
 
-    func didFail(_ ad: MaioInterstitial, errorCode: Int) {
+    public func didFail(_ ad: MaioInterstitial, errorCode: Int) {
         let errorMessage = ISMaioCustomAdapter.errorMessage(from: errorCode)
 
         if 10000..<20000 ~= errorCode {
