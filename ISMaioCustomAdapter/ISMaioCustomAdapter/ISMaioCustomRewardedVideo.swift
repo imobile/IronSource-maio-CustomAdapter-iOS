@@ -26,8 +26,10 @@ public class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
         self.loadDelegate = delegate
 
         let request = MaioRequest(zoneId: zoneId, testMode: false)
-        let ad = MaioRewarded.loadAd(request: request, callback: self)
-        self.ad = ad;
+        DispatchQueue.main.async {
+            let ad = MaioRewarded.loadAd(request: request, callback: self)
+            self.ad = ad;
+        }
     }
 
     public override func isAdAvailable(with adData: ISAdData!) -> Bool {
@@ -44,7 +46,9 @@ public class ISMaioCustomRewardedVideo: ISBaseRewardedVideo {
 
         self.showDelegate = delegate
 
-        ad.show(viewContext: viewController, callback: self)
+        DispatchQueue.main.async {
+            ad.show(viewContext: viewController, callback: self)
+        }
     }
 }
 

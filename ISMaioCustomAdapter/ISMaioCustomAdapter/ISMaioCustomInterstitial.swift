@@ -26,8 +26,10 @@ public class ISMaioCustomInterstitial: ISBaseInterstitial {
         self.loadDelegate = delegate
 
         let request = MaioRequest(zoneId: zoneId, testMode: false)
-        let ad = MaioInterstitial.loadAd(request: request, callback: self)
-        self.ad = ad;
+        DispatchQueue.main.async {
+            let ad = MaioInterstitial.loadAd(request: request, callback: self)
+            self.ad = ad;
+        }
     }
 
     public override func isAdAvailable(with adData: ISAdData!) -> Bool {
@@ -44,7 +46,9 @@ public class ISMaioCustomInterstitial: ISBaseInterstitial {
 
         self.showDelegate = delegate
 
-        ad.show(viewContext: viewController, callback: self)
+        DispatchQueue.main.async {
+            ad.show(viewContext: viewController, callback: self)
+        }
     }
 }
 
