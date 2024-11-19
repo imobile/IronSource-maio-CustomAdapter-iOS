@@ -34,5 +34,5 @@ Custom adapter for connecting IronSource and Maio.
 
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MaioSDK-v2', '>= 2.1.5'
-  s.dependency 'IronSourceSDK', '>= 8.0.0'
+  s.dependency 'IronSourceSDK', '>= 8.4.0'
 end
