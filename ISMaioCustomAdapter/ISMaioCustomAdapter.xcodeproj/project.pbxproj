@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C292C4092C2B0BAD00B84092 /* ISMaioCustomAdapter.docc in Sources */ = {isa = PBXBuildFile; fileRef = C292C4082C2B0BAD00B84092 /* ISMaioCustomAdapter.docc */; };
+		C292C40F2C2B0BAD00B84092 /* ISMaioCustomAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C4042C2B0BAD00B84092 /* ISMaioCustomAdapter.framework */; };
+		C292C4142C2B0BAD00B84092 /* ISMaioCustomAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C292C4132C2B0BAD00B84092 /* ISMaioCustomAdapterTests.m */; };
+		C292C4212C2B0D1D00B84092 /* IronSource.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C41F2C2B0D1D00B84092 /* IronSource.xcframework */; };
+		C292C4222C2B0D1D00B84092 /* Maio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C292C4202C2B0D1D00B84092 /* Maio.xcframework */; };
+		C2B8CAC52C2B89BC002761C7 /* ISMaioCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */; };
+		C2B8CAC72C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */; };
+		C2B8CAC92C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */; };
+		C2B8CACB2C349982002761C7 /* ISMaioCustomRewardedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C292C4102C2B0BAD00B84092 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C292C3FB2C2B0BAD00B84092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C292C4032C2B0BAD00B84092;
+			remoteInfo = ISMaioCustomAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C292C4042C2B0BAD00B84092 /* ISMaioCustomAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISMaioCustomAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C292C4082C2B0BAD00B84092 /* ISMaioCustomAdapter.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ISMaioCustomAdapter.docc; sourceTree = "<group>"; };
+		C292C40E2C2B0BAD00B84092 /* ISMaioCustomAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ISMaioCustomAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C292C4132C2B0BAD00B84092 /* ISMaioCustomAdapterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISMaioCustomAdapterTests.m; sourceTree = "<group>"; };
+		C292C41F2C2B0D1D00B84092 /* IronSource.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IronSource.xcframework; sourceTree = "<group>"; };
+		C292C4202C2B0D1D00B84092 /* Maio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Maio.xcframework; sourceTree = "<group>"; };
+		C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomAdapter.swift; sourceTree = "<group>"; };
+		C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomAdapterConstants.swift; sourceTree = "<group>"; };
+		C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomInterstitial.swift; sourceTree = "<group>"; };
+		C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMaioCustomRewardedVideo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C292C4012C2B0BAD00B84092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C292C4212C2B0D1D00B84092 /* IronSource.xcframework in Frameworks */,
+				C292C4222C2B0D1D00B84092 /* Maio.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C292C40B2C2B0BAD00B84092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C292C40F2C2B0BAD00B84092 /* ISMaioCustomAdapter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C292C3FA2C2B0BAD00B84092 = {
+			isa = PBXGroup;
+			children = (
+				C292C41E2C2B0BB800B84092 /* Frameworks */,
+				C292C4062C2B0BAD00B84092 /* ISMaioCustomAdapter */,
+				C292C4122C2B0BAD00B84092 /* ISMaioCustomAdapterTests */,
+				C292C4052C2B0BAD00B84092 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C292C4052C2B0BAD00B84092 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C292C4042C2B0BAD00B84092 /* ISMaioCustomAdapter.framework */,
+				C292C40E2C2B0BAD00B84092 /* ISMaioCustomAdapterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C292C4062C2B0BAD00B84092 /* ISMaioCustomAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				C292C4082C2B0BAD00B84092 /* ISMaioCustomAdapter.docc */,
+				C2B8CAC42C2B89BC002761C7 /* ISMaioCustomAdapter.swift */,
+				C2B8CAC62C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift */,
+				C2B8CAC82C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift */,
+				C2B8CACA2C349982002761C7 /* ISMaioCustomRewardedVideo.swift */,
+			);
+			path = ISMaioCustomAdapter;
+			sourceTree = "<group>";
+		};
+		C292C4122C2B0BAD00B84092 /* ISMaioCustomAdapterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C292C4132C2B0BAD00B84092 /* ISMaioCustomAdapterTests.m */,
+			);
+			path = ISMaioCustomAdapterTests;
+			sourceTree = "<group>";
+		};
+		C292C41E2C2B0BB800B84092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C292C41F2C2B0D1D00B84092 /* IronSource.xcframework */,
+				C292C4202C2B0D1D00B84092 /* Maio.xcframework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C292C3FF2C2B0BAD00B84092 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C292C4032C2B0BAD00B84092 /* ISMaioCustomAdapter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C292C4182C2B0BAD00B84092 /* Build configuration list for PBXNativeTarget "ISMaioCustomAdapter" */;
+			buildPhases = (
+				C292C3FF2C2B0BAD00B84092 /* Headers */,
+				C292C4002C2B0BAD00B84092 /* Sources */,
+				C292C4012C2B0BAD00B84092 /* Frameworks */,
+				C292C4022C2B0BAD00B84092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISMaioCustomAdapter;
+			productName = ISMaioCustomAdapter;
+			productReference = C292C4042C2B0BAD00B84092 /* ISMaioCustomAdapter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C292C40D2C2B0BAD00B84092 /* ISMaioCustomAdapterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C292C41B2C2B0BAD00B84092 /* Build configuration list for PBXNativeTarget "ISMaioCustomAdapterTests" */;
+			buildPhases = (
+				C292C40A2C2B0BAD00B84092 /* Sources */,
+				C292C40B2C2B0BAD00B84092 /* Frameworks */,
+				C292C40C2C2B0BAD00B84092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C292C4112C2B0BAD00B84092 /* PBXTargetDependency */,
+			);
+			name = ISMaioCustomAdapterTests;
+			productName = ISMaioCustomAdapterTests;
+			productReference = C292C40E2C2B0BAD00B84092 /* ISMaioCustomAdapterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C292C3FB2C2B0BAD00B84092 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C292C4032C2B0BAD00B84092 = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					C292C40D2C2B0BAD00B84092 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C292C3FE2C2B0BAD00B84092 /* Build configuration list for PBXProject "ISMaioCustomAdapter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C292C3FA2C2B0BAD00B84092;
+			productRefGroup = C292C4052C2B0BAD00B84092 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C292C4032C2B0BAD00B84092 /* ISMaioCustomAdapter */,
+				C292C40D2C2B0BAD00B84092 /* ISMaioCustomAdapterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C292C4022C2B0BAD00B84092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C292C40C2C2B0BAD00B84092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C292C4002C2B0BAD00B84092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B8CAC72C2B8B3D002761C7 /* ISMaioCustomAdapterConstants.swift in Sources */,
+				C2B8CAC52C2B89BC002761C7 /* ISMaioCustomAdapter.swift in Sources */,
+				C292C4092C2B0BAD00B84092 /* ISMaioCustomAdapter.docc in Sources */,
+				C2B8CACB2C349982002761C7 /* ISMaioCustomRewardedVideo.swift in Sources */,
+				C2B8CAC92C2B8D1C002761C7 /* ISMaioCustomInterstitial.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C292C40A2C2B0BAD00B84092 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C292C4142C2B0BAD00B84092 /* ISMaioCustomAdapterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C292C4112C2B0BAD00B84092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C292C4032C2B0BAD00B84092 /* ISMaioCustomAdapter */;
+			targetProxy = C292C4102C2B0BAD00B84092 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C292C4162C2B0BAD00B84092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C292C4172C2B0BAD00B84092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C292C4192C2B0BAD00B84092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.maio.sandbox.ISMaioCustomAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C292C41A2C2B0BAD00B84092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.maio.sandbox.ISMaioCustomAdapter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C292C41C2C2B0BAD00B84092 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.maio.sandbox.ISMaioCustomAdapterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C292C41D2C2B0BAD00B84092 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.maio.sandbox.ISMaioCustomAdapterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C292C3FE2C2B0BAD00B84092 /* Build configuration list for PBXProject "ISMaioCustomAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C292C4162C2B0BAD00B84092 /* Debug */,
+				C292C4172C2B0BAD00B84092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C292C4182C2B0BAD00B84092 /* Build configuration list for PBXNativeTarget "ISMaioCustomAdapter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C292C4192C2B0BAD00B84092 /* Debug */,
+				C292C41A2C2B0BAD00B84092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C292C41B2C2B0BAD00B84092 /* Build configuration list for PBXNativeTarget "ISMaioCustomAdapterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C292C41C2C2B0BAD00B84092 /* Debug */,
+				C292C41D2C2B0BAD00B84092 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C292C3FB2C2B0BAD00B84092 /* Project object */;
+}
