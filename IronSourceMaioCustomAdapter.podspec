@@ -31,6 +31,7 @@ Custom adapter for connecting IronSource and Maio.
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'ISMaioCustomAdapter/ISMaioCustomAdapter/**/*'
+  s.static_framework = true
 
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MaioSDK-v2', '>= 2.1.5'
