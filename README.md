@@ -6,6 +6,11 @@
 
 ## Requirements
 
+This adapter depends on the following (if you use CocoaPods, these will be automatically added to your dependencies):
+
+- MaioSDK >= 2.1.5
+- IronSourceSDK >= 8.4.0
+
 ## Installation
 
 IronSourceMaioCustomAdapter is available through [CocoaPods](https://cocoapods.org).
