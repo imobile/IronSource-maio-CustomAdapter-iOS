@@ -26,14 +26,14 @@ Custom adapter for connecting IronSource and Maio.
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.author           = 'i-mobile'
   s.source           = { :git => 'https://github.com/imobile/IronSource-maio-CustomAdapter-iOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
+  s.swift_version    = '5.0'
 
   s.source_files = 'ISMaioCustomAdapter/ISMaioCustomAdapter/**/*'
   s.static_framework = true
 
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MaioSDK-v2', '>= 2.1.5'
-  s.dependency 'IronSourceSDK', '>= 8.4.0'
+  s.dependency 'IronSourceSDK/Ads', '>= 8.9.0'
 end
