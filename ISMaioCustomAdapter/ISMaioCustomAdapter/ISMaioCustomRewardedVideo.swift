@@ -60,7 +60,6 @@ extension ISMaioCustomRewardedVideo: MaioRewardedLoadCallback, MaioRewardedShowC
 
     public func didOpen(_ ad: MaioRewarded) {
         self.showDelegate?.adDidOpen()
-        self.showDelegate?.adDidShowSucceed()
     }
     public func didClose(_ ad: MaioRewarded) {
         self.showDelegate?.adDidClose()
