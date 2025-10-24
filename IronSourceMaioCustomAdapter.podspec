@@ -5,7 +5,7 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-adapter_version = '1.0.0'
+adapter_version = '1.0.1'
 
 Pod::Spec.new do |s|
   s.name             = 'IronSourceMaioCustomAdapter'
@@ -35,5 +35,5 @@ Custom adapter for connecting IronSource and Maio.
 
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MaioSDK-v2', '>= 2.1.5'
-  s.dependency 'IronSourceSDK/Ads', '>= 8.9.0'
+  s.dependency 'IronSourceSDK/Ads', '~> 8.9'
 end
