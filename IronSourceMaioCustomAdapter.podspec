@@ -34,6 +34,6 @@ Custom adapter for connecting IronSource and Maio.
   s.static_framework = true
 
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'MaioSDK-v2', '>= 2.1.5'
-  s.dependency 'IronSourceSDK/Ads', '~> 8.9'
+  s.dependency 'MaioSDK-v2', '>= 2.2.0'
+  s.dependency 'IronSourceSDK/Ads', '~> 9.0'
 end
