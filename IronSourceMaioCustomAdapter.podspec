@@ -5,7 +5,7 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-adapter_version = '1.0.1'
+adapter_version = '1.1.0'
 
 Pod::Spec.new do |s|
   s.name             = 'IronSourceMaioCustomAdapter'
