@@ -60,7 +60,6 @@ extension ISMaioCustomInterstitial: MaioInterstitialLoadCallback, MaioInterstiti
 
     public func didOpen(_ ad: MaioInterstitial) {
         self.showDelegate?.adDidOpen()
-        self.showDelegate?.adDidShowSucceed()
     }
     public func didClose(_ ad: MaioInterstitial) {
         self.showDelegate?.adDidClose()
